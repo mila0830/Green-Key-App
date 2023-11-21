@@ -2,9 +2,10 @@ import React from 'react';
 //import './App.css';
 //import Navbar from './components/Navbar';
 import { useRef } from 'react';
-import Home from './pages/Home/Home';
-import Upload from './pages/Upload';
-import Table from './pages/TablePage';
+import Home from './pages/home/Home';
+import Upload from './pages/upload/Upload';
+import Table from './pages/table/TablePage';
+import Uploader from './components/uploader/Uploader'
 import {BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
@@ -32,6 +33,7 @@ const TestComponent = () => {
 */
 function App() {
   return (
+    
     <div>
       <BrowserRouter>
             <Routes>
@@ -43,6 +45,8 @@ function App() {
       
             </Routes>
         </BrowserRouter>
+
+        
       
     </div>
     
