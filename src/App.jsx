@@ -1,60 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
-import * as React from 'react';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
-import { styled } from '@mui/material/styles';
-import Button from '@mui/material/Button';
-import CloudUploadIcon from '@mui/icons-material/CloudUpload';
+import React from 'react';
+//import './App.css';
+//import Navbar from './components/Navbar';
+import { useRef } from 'react';
+import Home from './pages/Home/Home';
+import Upload from './pages/Upload';
+import Table from './pages/TablePage';
+import {BrowserRouter, Routes, Route } from 'react-router-dom';
 
-const VisuallyHiddenInput = styled('input')({
-  clip: 'rect(0 0 0 0)',
-  clipPath: 'inset(50%)',
-  height: 1,
-  overflow: 'hidden',
-  position: 'absolute',
-  bottom: 0,
-  left: 0,
-  whiteSpace: 'nowrap',
-  width: 1,
-});
 
-export function InputFileUpload() {
+/*
+<Router>
+            <Navbar />
+            <Routes>
+                <Route exact path='/' element={<Home />} />
+                <Route path='/Upload' element={<Upload />} />
+                <Route path='/TablePage' element={<Table />} />
+      
+            </Routes>
+        </Router>
+*/
+
+const TestComponent = () => {
   return (
-    <Button component="label" variant="contained" startIcon={<CloudUploadIcon />}>
-      Upload file
-      <VisuallyHiddenInput type="file" />
-    </Button>
-  );
+    <>x</>
+  )
 }
-
-
+/*
+<Route exact path='/' element={<>TestComponent</>} />
+                <Route path='/upload' element={<>TestComponent</>} />
+                <Route path='/tablepage' element={<>TestComponent</>} />
+*/
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Green Key
-        </a>
-
-      </header>
-      <InputFileUpload/>
+    <div>
+      <BrowserRouter>
+            <Routes>
+                <Route exact path='/' element={<Home />} />
+                <Route path='/upload' element={<Upload />} />
+                <Route path='/tablepage' element={<Table />} />
+              
+                
+      
+            </Routes>
+        </BrowserRouter>
+      
     </div>
+    
   );
 }
-
 export default App;
