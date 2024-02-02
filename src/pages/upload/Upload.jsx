@@ -9,7 +9,7 @@ function Upload() {
   
   const [company, setCompany] = useState("");
   const [industry, setIndustry] = useState("");
-  const [esg_report, selectedFile] = useState(null);
+  const [esg_report, setEsgReport] = useState(null);
   
   const handleStartClick = async (e) => {
     e.preventDefault();
@@ -21,7 +21,7 @@ function Upload() {
       const formData = new FormData();
       formData.append("company", company);
       formData.append("industry", industry);
-      formData.append("esg_report", selectedFile); // Assuming the file field is named esg_report
+      formData.append("esg_report", esg_report); // Assuming the file field is named esg_report
       
       const response = await axios.post(apiUrl, formData, {
         headers: {
@@ -62,8 +62,11 @@ function Upload() {
             </p>
           </div>
           <div class="col-lg-7">
-            <Uploader 
-            esg_report ={esg_report}
+            <Uploader
+              selectedFile={esg_report}
+              setEsgReport={setEsgReport}
+
+            // esg_report ={esg_report}
             />
           </div>
           <div class="col-lg-8">
