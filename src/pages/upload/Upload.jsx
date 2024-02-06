@@ -22,7 +22,7 @@ function Upload() {
       formData.append("company", company);
       formData.append("industry", industry);
       formData.append("esg_report", esg_report); // Assuming the file field is named esg_report
-      
+      //using a post method type
       const response = await axios.post(apiUrl, formData, {
         headers: {
           "Content-Type": "multipart/form-data",
