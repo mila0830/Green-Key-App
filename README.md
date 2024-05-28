@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Front End for GreenKey App
+Below contains the basic information of starting a react application 
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
