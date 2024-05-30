@@ -1,6 +1,11 @@
 # Front End for GreenKey App
 Below contains the basic information of starting a react application 
 
+## To start
+1. To get the beta version running:
+* "npm start" on bash terminal for greenkey folder
+* python -m uvicorn api:app --reload on bash terminal for the ESGResearch
+
 ## Different Components
 ### src -> components
 This folder contains all the elements/components that I started to build for the web application
