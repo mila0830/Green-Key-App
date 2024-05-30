@@ -1,6 +1,19 @@
 # Front End for GreenKey App
 Below contains the basic information of starting a react application 
 
+## Different Components
+### src -> components
+This folder contains all the elements/components that I started to build for the web application
+
+### src -> pages
+This folder contains all the pages of the MVP of the web application
+* home -> contains the home page
+* table -> contains the page that will show the table after the ESG report is uploaded
+* upload -> is the page where the ESG report should be uploaded
+* also other misc pages like About, Contact, Footer that were started but not completed fully
+
+### App.jsx
+* this page holds all the basics of the web application
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
