@@ -1,4 +1,8 @@
 # Front End for GreenKey App
+Here is a link to the background and a short pitch about the app: https://github.com/mila0830/Green-Key-App/blob/main/Green%20Key%20Pitch.pdf
+
+To find backend work go to the ESG-Research-Back-End: https://github.com/mila0830/ESG-Research-Back-End
+
 Below contains the basic information of starting a react application 
 
 ## To start
